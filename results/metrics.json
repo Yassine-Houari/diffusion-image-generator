@@ -1,0 +1,66 @@
+{
+  "model": {
+    "n_params_M": 16.5,
+    "timesteps": 1000,
+    "schedule": "cosine",
+    "train_time_min": 49.0,
+    "sec_per_epoch": 58.7,
+    "gpu": "Tesla T4",
+    "final_loss": 0.0368
+  },
+  "generation": {
+    "n_samples": 5000,
+    "minutes": 28.1,
+    "ms_per_image": 337.0
+  },
+  "fid": {
+    "generated_vs_test": 3.6,
+    "real_train_vs_test_reference": 2.2,
+    "n_generated": 5000,
+    "n_test_reference": 10000
+  },
+  "judge_classifier": {
+    "test_accuracy": 0.9915,
+    "generated": {
+      "mean_confidence": 0.9589,
+      "confident_share": 0.8822,
+      "classifier_inception_score": 8.877,
+      "class_entropy_normalized": 0.9979,
+      "class_shares": [
+        0.087,
+        0.1134,
+        0.1062,
+        0.1114,
+        0.0884,
+        0.0932,
+        0.0914,
+        0.1112,
+        0.0934,
+        0.1044
+      ]
+    },
+    "real_test": {
+      "mean_confidence": 0.9895,
+      "confident_share": 0.9717,
+      "classifier_inception_score": 9.635,
+      "class_entropy_normalized": 0.9992,
+      "class_shares": [
+        0.0984,
+        0.1136,
+        0.1045,
+        0.1015,
+        0.0984,
+        0.0893,
+        0.0946,
+        0.1031,
+        0.0962,
+        0.1004
+      ]
+    }
+  },
+  "memorization": {
+    "median_nn_distance_generated": 4.511,
+    "median_nn_distance_test": 4.38,
+    "share_below_test_1pct_threshold": 0.0034
+  }
+}
