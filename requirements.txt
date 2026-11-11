@@ -1,6 +1,8 @@
-torch
+torch>=2.3
 torchvision
 numpy
 matplotlib
 tqdm
-scikit-image
+torchmetrics
+torch-fidelity
+jupyter
